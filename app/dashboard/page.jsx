@@ -1,14 +1,15 @@
 import Header from '@/components/Header';
 import StatCard from '@/components/StatCard';
 import TaskList from '@/components/TaskList';
+import { Package, Zap, CheckCircle, Hammer } from 'lucide-react';
 
 export default function Dashboard() {
   // Dummy data - later ye dynamic hoga
   const stats = [
-    { title: 'Total Projects', value: '3', icon: '📦', color: 'blue' },
-    { title: 'Active Tasks', value: '5', icon: '⚡', color: 'yellow' },
-    { title: 'Completed', value: '12', icon: '✓', color: 'green' },
-    { title: 'In Progress', value: '2', icon: '🔨', color: 'purple' }
+    { title: 'Total Projects', value: '3', icon: Package, color: 'blue' },
+    { title: 'Active Tasks', value: '5', icon: Zap, color: 'yellow' },
+    { title: 'Completed', value: '12', icon: CheckCircle, color: 'green' },
+    { title: 'In Progress', value: '2', icon: Hammer, color: 'purple' }
   ];
 
   const recentTasks = [
